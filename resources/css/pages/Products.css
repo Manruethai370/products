@@ -1,0 +1,17 @@
+/* resources/css/pages/Products.css */
+body {
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+}

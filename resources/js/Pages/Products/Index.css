@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex; /* เพิ่ม */
+    flex-direction: column; /* เพิ่ม */
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    color: #000000;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.product-item {
+    flex: 1 1 calc(33.333% - 20px);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex; /* ใช้ Flexbox */
+    flex-direction: column; /* จัดองค์ประกอบในแนวตั้ง */
+    justify-content: space-between; /* กระจายองค์ประกอบให้พอดี */
+}
+
+.product-image {
+    max-width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 auto 10px; /* จัดรูปให้อยู่กลางด้วย margin auto */
+    border-radius: 8px;
+    display: block; /* จำเป็นสำหรับการใช้งาน margin auto */
+}
+
+.product-name {
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.product-price {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.view-details-link {
+    display: inline-block;
+    margin: 10px auto; /* จัดปุ่มให้อยู่กลางด้วย margin auto */
+    text-decoration: none;
+    background-color: #278f21;
+    color: #fff;
+    padding: 6px 10px; /* ลดขนาด padding */
+    border-radius: 4px;
+    font-size: 0.9rem; /* ลดขนาดตัวอักษร */
+    width: 80%; /* ปรับความกว้างของปุ่ม */
+    text-align: center; /* จัดข้อความในปุ่มให้อยู่กลาง */
+}
+
+.view-details-link:hover {
+    background-color: #3f4041;
+}
+
+
